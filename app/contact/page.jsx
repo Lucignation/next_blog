@@ -25,7 +25,7 @@ const ContactPage = () => {
 
     const response = await sendMessage.json();
     console.log('response ', response);
-    if (response.status === 200) {
+    if (response.message) {
       console.log('Success');
       setMessage({
         name: '',
