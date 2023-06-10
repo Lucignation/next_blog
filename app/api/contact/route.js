@@ -11,6 +11,7 @@ export async function POST(request) {
       user: 'olumidegerald@gmail.com',
       pass: process.env.password,
     },
+    secure: true,
   });
 
   const mailData = {
